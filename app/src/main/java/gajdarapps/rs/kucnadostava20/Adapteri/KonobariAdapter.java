@@ -60,6 +60,7 @@ public class KonobariAdapter extends BaseAdapter {
             String s= obj.getString("slika");
             String putanja="http://"+mServer+"/KucnaDostava/Konobari/"+ s.substring(s.lastIndexOf("\\")+1);
             Picasso.with(this.mActivity).load(putanja).into(celija.mSlika);
+
         }
         catch (JSONException e){
             e.printStackTrace();
